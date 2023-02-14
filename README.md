@@ -1,2 +1,2 @@
 # cautious-lamp
-A Basic Ballistic Calculation Implemented With OpenCV
+A Basic Ballistic Calculation Implementation With OpenCV
