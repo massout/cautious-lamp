@@ -6,10 +6,6 @@
 #include <opencv4/opencv2/highgui.hpp>
 #include <opencv4/opencv2/imgproc.hpp>
 
-class Gun {
-   public:
-};
-
 class BallisticCalc {
     Ballistics* result;
     int k;
@@ -43,7 +39,7 @@ BallisticCalc::~BallisticCalc() {
     Ballistics_free(this->result);
 }
 
-void draw_crossight_d(cv::Mat frame, int x, int y, cv::Point d) {
+void draw_crosshair_d(cv::Mat frame, int x, int y, cv::Point d) {
     cv::drawMarker(frame, cv::Point(x, y), cv::Scalar(255, 0, 255), cv::MARKER_CROSS, 50, 2);
 
     x += d.x;
