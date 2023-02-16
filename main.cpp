@@ -15,7 +15,7 @@ int main() {
 
     draw_crosshair_d(frame, 500, 500, c);
 
-    cv::putText(frame, "Lenght: " + std::to_string(len_meter) + "m", cv::Point(0, 50), 0, 1, cv::Scalar(0, 255, 0), 2);
+    cv::putText(frame, "Length: " + std::to_string(len_meter) + "m", cv::Point(0, 50), 0, 1, cv::Scalar(0, 255, 0), 2);
 
     cv::imshow("Frame", frame);
 
